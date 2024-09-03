@@ -1,4 +1,8 @@
 package de.ricardo;
 
-public record Teacher(int id, String name, String subject) {
+import lombok.Builder;
+import lombok.With;
+
+@Builder
+public record Teacher(@With int id,@With String name,@With String subject) {
 }

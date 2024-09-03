@@ -1,19 +1,18 @@
 package de.ricardo;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.List;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class Course {
 
-    private int id;
-    private String name;
-    private Teacher teacher;
-    private List<Student> students;
+    @With private int id;
+    @With private String name;
+    @With private Teacher teacher;
+    @With private List<Student> students;
 
 }

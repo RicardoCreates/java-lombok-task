@@ -1,9 +1,6 @@
 package de.ricardo;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
 @NoArgsConstructor
@@ -11,9 +8,9 @@ import lombok.NoArgsConstructor;
 @Builder
 public class Student {
 
-    private int id;
-    private String name;
-    private String address;
-    private String grade;
+    @With private int id;
+    @With private String name;
+    @With private String address;
+    @With private String grade;
 
 }
